@@ -22,10 +22,126 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Text = "Form1"
+        Panel1 = New Panel()
+        Button4 = New Button()
+        Button3 = New Button()
+        Button2 = New Button()
+        DashboardBtn = New Button()
+        ItemsBtn = New Button()
+        Panel2 = New Panel()
+        Panel8 = New Panel()
+        Panel1.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' Panel1
+        ' 
+        Panel1.BackColor = Color.LightSkyBlue
+        Panel1.Controls.Add(DashboardBtn)
+        Panel1.Controls.Add(ItemsBtn)
+        Panel1.Controls.Add(Button4)
+        Panel1.Controls.Add(Button3)
+        Panel1.Controls.Add(Button2)
+        Panel1.Dock = DockStyle.Left
+        Panel1.Location = New Point(0, 0)
+        Panel1.Name = "Panel1"
+        Panel1.Size = New Size(200, 459)
+        Panel1.TabIndex = 0
+        ' 
+        ' Button4
+        ' 
+        Button4.FlatAppearance.BorderSize = 0
+        Button4.FlatStyle = FlatStyle.Flat
+        Button4.Location = New Point(3, 282)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(194, 44)
+        Button4.TabIndex = 10
+        Button4.Text = "Suppliers"
+        Button4.UseVisualStyleBackColor = True
+        ' 
+        ' Button3
+        ' 
+        Button3.FlatAppearance.BorderSize = 0
+        Button3.FlatStyle = FlatStyle.Flat
+        Button3.Location = New Point(3, 238)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(194, 44)
+        Button3.TabIndex = 8
+        Button3.Text = "Items Sold"
+        Button3.UseVisualStyleBackColor = True
+        ' 
+        ' Button2
+        ' 
+        Button2.FlatAppearance.BorderSize = 0
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.Location = New Point(3, 194)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(194, 44)
+        Button2.TabIndex = 6
+        Button2.Text = "Items In"
+        Button2.UseVisualStyleBackColor = True
+        ' 
+        ' DashboardBtn
+        ' 
+        DashboardBtn.Cursor = Cursors.Hand
+        DashboardBtn.FlatAppearance.BorderSize = 0
+        DashboardBtn.FlatStyle = FlatStyle.Flat
+        DashboardBtn.Location = New Point(3, 100)
+        DashboardBtn.Name = "DashboardBtn"
+        DashboardBtn.Padding = New Padding(5, 0, 0, 0)
+        DashboardBtn.Size = New Size(194, 44)
+        DashboardBtn.TabIndex = 2
+        DashboardBtn.Text = "Dashboard"
+        DashboardBtn.UseVisualStyleBackColor = True
+        ' 
+        ' ItemsBtn
+        ' 
+        ItemsBtn.FlatAppearance.BorderSize = 0
+        ItemsBtn.FlatStyle = FlatStyle.Flat
+        ItemsBtn.Location = New Point(3, 150)
+        ItemsBtn.Name = "ItemsBtn"
+        ItemsBtn.Size = New Size(194, 44)
+        ItemsBtn.TabIndex = 4
+        ItemsBtn.Text = "Items"
+        ItemsBtn.UseVisualStyleBackColor = True
+        ' 
+        ' Panel2
+        ' 
+        Panel2.BackColor = Color.DodgerBlue
+        Panel2.Dock = DockStyle.Top
+        Panel2.Location = New Point(200, 0)
+        Panel2.Name = "Panel2"
+        Panel2.Size = New Size(667, 30)
+        Panel2.TabIndex = 1
+        ' 
+        ' Panel8
+        ' 
+        Panel8.Location = New Point(200, 27)
+        Panel8.Name = "Panel8"
+        Panel8.Size = New Size(667, 432)
+        Panel8.TabIndex = 2
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(867, 459)
+        Controls.Add(Panel8)
+        Controls.Add(Panel2)
+        Controls.Add(Panel1)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        Name = "Form1"
+        Text = "Form1"
+        Panel1.ResumeLayout(False)
+        ResumeLayout(False)
     End Sub
+
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents DashboardBtn As Button
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents ItemsBtn As Button
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Panel8 As Panel
 
 End Class
