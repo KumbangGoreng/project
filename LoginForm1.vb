@@ -26,16 +26,11 @@ Public Class LoginForm1
                 End Using
 
                 If (dt.Rows.Count > 0) Then
-                    MessageBox.Show("Login Success", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    Form1.ShowDialog()
                 Else
                     MessageBox.Show("Error", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
                 End If
             End Using
         End Using
     End Sub
-
-    Private Sub Cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Cancel.Click
-        Me.Close()
-    End Sub
-
 End Class
