@@ -14,12 +14,12 @@ Partial Class LoginForm1
             MyBase.Dispose(disposing)
         End Try
     End Sub
-    Friend WithEvents LogoPictureBox As System.Windows.Forms.PictureBox
-    Friend WithEvents UsernameLabel As System.Windows.Forms.Label
-    Friend WithEvents PasswordLabel As System.Windows.Forms.Label
-    Friend WithEvents UsernameTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents PasswordTextBox As System.Windows.Forms.TextBox
-    Friend WithEvents LoginButton As System.Windows.Forms.Button
+    Friend WithEvents LogoPictureBox As PictureBox
+    Friend WithEvents UsernameLabel As Label
+    Friend WithEvents PasswordLabel As Label
+    Friend WithEvents UsernameTextBox As TextBox
+    Friend WithEvents PasswordTextBox As TextBox
+    Friend WithEvents LoginButton As Button
 
     'Required by the Windows Form Designer
     Private components As System.ComponentModel.IContainer
@@ -27,7 +27,7 @@ Partial Class LoginForm1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         LogoPictureBox = New PictureBox()
         UsernameLabel = New Label()
@@ -42,59 +42,63 @@ Partial Class LoginForm1
         ' 
         LogoPictureBox.Image = My.Resources.Resources.A_safer_antibiotic
         LogoPictureBox.Location = New Point(0, 0)
+        LogoPictureBox.Margin = New Padding(3, 4, 3, 4)
         LogoPictureBox.Name = "LogoPictureBox"
-        LogoPictureBox.Size = New Size(165, 193)
+        LogoPictureBox.Size = New Size(189, 257)
         LogoPictureBox.SizeMode = PictureBoxSizeMode.StretchImage
         LogoPictureBox.TabIndex = 0
         LogoPictureBox.TabStop = False
         ' 
         ' UsernameLabel
         ' 
-        UsernameLabel.Location = New Point(172, 24)
+        UsernameLabel.Location = New Point(197, 32)
         UsernameLabel.Name = "UsernameLabel"
-        UsernameLabel.Size = New Size(220, 23)
+        UsernameLabel.Size = New Size(251, 31)
         UsernameLabel.TabIndex = 0
         UsernameLabel.Text = "&User name"
         UsernameLabel.TextAlign = ContentAlignment.MiddleLeft
         ' 
         ' PasswordLabel
         ' 
-        PasswordLabel.Location = New Point(172, 81)
+        PasswordLabel.Location = New Point(197, 108)
         PasswordLabel.Name = "PasswordLabel"
-        PasswordLabel.Size = New Size(220, 23)
+        PasswordLabel.Size = New Size(251, 31)
         PasswordLabel.TabIndex = 2
         PasswordLabel.Text = "&Password"
         PasswordLabel.TextAlign = ContentAlignment.MiddleLeft
         ' 
         ' UsernameTextBox
         ' 
-        UsernameTextBox.Location = New Point(174, 44)
+        UsernameTextBox.Location = New Point(199, 59)
+        UsernameTextBox.Margin = New Padding(3, 4, 3, 4)
         UsernameTextBox.Name = "UsernameTextBox"
-        UsernameTextBox.Size = New Size(220, 23)
+        UsernameTextBox.Size = New Size(251, 27)
         UsernameTextBox.TabIndex = 1
         ' 
         ' PasswordTextBox
         ' 
-        PasswordTextBox.Location = New Point(174, 101)
+        PasswordTextBox.Location = New Point(199, 135)
+        PasswordTextBox.Margin = New Padding(3, 4, 3, 4)
         PasswordTextBox.Name = "PasswordTextBox"
         PasswordTextBox.PasswordChar = "*"c
-        PasswordTextBox.Size = New Size(220, 23)
+        PasswordTextBox.Size = New Size(251, 27)
         PasswordTextBox.TabIndex = 3
         ' 
         ' LoginButton
         ' 
-        LoginButton.Location = New Point(236, 157)
+        LoginButton.Location = New Point(270, 209)
+        LoginButton.Margin = New Padding(3, 4, 3, 4)
         LoginButton.Name = "LoginButton"
-        LoginButton.Size = New Size(94, 23)
+        LoginButton.Size = New Size(107, 31)
         LoginButton.TabIndex = 4
         LoginButton.Text = "&Login"
         ' 
         ' LoginForm1
         ' 
         AcceptButton = LoginButton
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(8.0F, 20.0F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(401, 192)
+        ClientSize = New Size(458, 256)
         Controls.Add(LoginButton)
         Controls.Add(PasswordTextBox)
         Controls.Add(UsernameTextBox)
@@ -102,6 +106,7 @@ Partial Class LoginForm1
         Controls.Add(UsernameLabel)
         Controls.Add(LogoPictureBox)
         FormBorderStyle = FormBorderStyle.FixedDialog
+        Margin = New Padding(3, 4, 3, 4)
         MaximizeBox = False
         MinimizeBox = False
         Name = "LoginForm1"
@@ -111,7 +116,6 @@ Partial Class LoginForm1
         CType(LogoPictureBox, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
-
     End Sub
 
 End Class
