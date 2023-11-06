@@ -23,11 +23,11 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Panel1 = New Panel()
+        DashboardBtn = New Button()
+        ItemsBtn = New Button()
         Button4 = New Button()
         Button3 = New Button()
         Button2 = New Button()
-        DashboardBtn = New Button()
-        ItemsBtn = New Button()
         Panel2 = New Panel()
         Panel8 = New Panel()
         Panel1.SuspendLayout()
@@ -35,56 +35,24 @@ Partial Class Form1
         ' 
         ' Panel1
         ' 
-        Panel1.BackColor = Color.LightSkyBlue
+        Panel1.BackColor = Color.MediumBlue
         Panel1.Controls.Add(DashboardBtn)
         Panel1.Controls.Add(ItemsBtn)
         Panel1.Controls.Add(Button4)
         Panel1.Controls.Add(Button3)
         Panel1.Controls.Add(Button2)
-        Panel1.Dock = DockStyle.Left
-        Panel1.Location = New Point(0, 0)
+        Panel1.Location = New Point(0, 54)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(200, 459)
+        Panel1.Size = New Size(200, 405)
         Panel1.TabIndex = 0
-        ' 
-        ' Button4
-        ' 
-        Button4.FlatAppearance.BorderSize = 0
-        Button4.FlatStyle = FlatStyle.Flat
-        Button4.Location = New Point(3, 282)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(194, 44)
-        Button4.TabIndex = 10
-        Button4.Text = "Suppliers"
-        Button4.UseVisualStyleBackColor = True
-        ' 
-        ' Button3
-        ' 
-        Button3.FlatAppearance.BorderSize = 0
-        Button3.FlatStyle = FlatStyle.Flat
-        Button3.Location = New Point(3, 238)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(194, 44)
-        Button3.TabIndex = 8
-        Button3.Text = "Items Sold"
-        Button3.UseVisualStyleBackColor = True
-        ' 
-        ' Button2
-        ' 
-        Button2.FlatAppearance.BorderSize = 0
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.Location = New Point(3, 194)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(194, 44)
-        Button2.TabIndex = 6
-        Button2.Text = "Items In"
-        Button2.UseVisualStyleBackColor = True
         ' 
         ' DashboardBtn
         ' 
         DashboardBtn.Cursor = Cursors.Hand
         DashboardBtn.FlatAppearance.BorderSize = 0
         DashboardBtn.FlatStyle = FlatStyle.Flat
+        DashboardBtn.ForeColor = SystemColors.ButtonHighlight
+        DashboardBtn.Image = My.Resources.Resources.apps
         DashboardBtn.Location = New Point(3, 100)
         DashboardBtn.Name = "DashboardBtn"
         DashboardBtn.Padding = New Padding(5, 0, 0, 0)
@@ -97,6 +65,8 @@ Partial Class Form1
         ' 
         ItemsBtn.FlatAppearance.BorderSize = 0
         ItemsBtn.FlatStyle = FlatStyle.Flat
+        ItemsBtn.ForeColor = SystemColors.ButtonHighlight
+        ItemsBtn.Image = My.Resources.Resources.apps
         ItemsBtn.Location = New Point(3, 150)
         ItemsBtn.Name = "ItemsBtn"
         ItemsBtn.Size = New Size(194, 44)
@@ -104,20 +74,59 @@ Partial Class Form1
         ItemsBtn.Text = "Items"
         ItemsBtn.UseVisualStyleBackColor = True
         ' 
+        ' Button4
+        ' 
+        Button4.FlatAppearance.BorderSize = 0
+        Button4.FlatStyle = FlatStyle.Flat
+        Button4.ForeColor = SystemColors.ButtonHighlight
+        Button4.Image = My.Resources.Resources.apps
+        Button4.Location = New Point(3, 282)
+        Button4.Name = "Button4"
+        Button4.Size = New Size(194, 44)
+        Button4.TabIndex = 10
+        Button4.Text = "Suppliers"
+        Button4.UseVisualStyleBackColor = True
+        ' 
+        ' Button3
+        ' 
+        Button3.FlatAppearance.BorderSize = 0
+        Button3.FlatStyle = FlatStyle.Flat
+        Button3.ForeColor = SystemColors.ButtonHighlight
+        Button3.Image = My.Resources.Resources.apps
+        Button3.Location = New Point(3, 238)
+        Button3.Name = "Button3"
+        Button3.Size = New Size(194, 44)
+        Button3.TabIndex = 8
+        Button3.Text = "Items Sold"
+        Button3.UseVisualStyleBackColor = True
+        ' 
+        ' Button2
+        ' 
+        Button2.FlatAppearance.BorderSize = 0
+        Button2.FlatStyle = FlatStyle.Flat
+        Button2.ForeColor = SystemColors.ButtonHighlight
+        Button2.Image = My.Resources.Resources.apps
+        Button2.Location = New Point(3, 194)
+        Button2.Name = "Button2"
+        Button2.Size = New Size(194, 44)
+        Button2.TabIndex = 6
+        Button2.Text = "Items In"
+        Button2.UseVisualStyleBackColor = True
+        ' 
         ' Panel2
         ' 
         Panel2.BackColor = Color.DodgerBlue
         Panel2.Dock = DockStyle.Top
-        Panel2.Location = New Point(200, 0)
+        Panel2.Location = New Point(0, 0)
         Panel2.Name = "Panel2"
-        Panel2.Size = New Size(667, 30)
+        Panel2.Size = New Size(867, 55)
         Panel2.TabIndex = 1
         ' 
         ' Panel8
         ' 
-        Panel8.Location = New Point(200, 27)
+        Panel8.Location = New Point(200, 54)
         Panel8.Name = "Panel8"
-        Panel8.Size = New Size(667, 432)
+        Panel8.Size = New Size(667, 405)
         Panel8.TabIndex = 2
         ' 
         ' Form1

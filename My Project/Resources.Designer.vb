@@ -73,6 +73,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property apps() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("apps", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property apps1() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("apps1", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property dasboardBtn() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("dasboardBtn", resourceCulture)
@@ -86,6 +106,28 @@ Namespace My.Resources
         Friend ReadOnly Property dashBtn() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("dashBtn", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Open_Capsule_PNG_Transparent__Open_The_Capsule__Open__Capsule__Material_PNG_Image_For_Free_Download() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Open Capsule PNG Transparent, Open The Capsule, Open, Capsule, Material PNG Image"& _ 
+                        " For Free Download", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Бесплатные__звезда__погода__солнце_фон_картинки__небо_свет_пространство_лед_справочная_информация_Фото_Фон_PNG_и_векторы() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Бесплатные  звезда, погода, солнце фон картинки, небо свет пространство лед справ"& _ 
+                        "очная информация Фото Фон PNG и векторы", resourceCulture)
                 Return CType(obj,System.Drawing.Bitmap)
             End Get
         End Property
