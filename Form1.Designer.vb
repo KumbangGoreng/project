@@ -22,29 +22,63 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Panel1 = New Panel()
+        btnPanel3 = New FlowLayoutPanel()
+        btnPanel2 = New FlowLayoutPanel()
+        BtnPanel1 = New FlowLayoutPanel()
         DashboardBtn = New Button()
         ItemsBtn = New Button()
-        Button4 = New Button()
-        Button3 = New Button()
-        Button2 = New Button()
+        SupplierBtn = New Button()
         Panel2 = New Panel()
+        ProfileBtn = New Button()
         Panel8 = New Panel()
+        LogoutBtn = New Button()
         Panel1.SuspendLayout()
+        Panel2.SuspendLayout()
         SuspendLayout()
         ' 
         ' Panel1
         ' 
         Panel1.BackColor = Color.MediumBlue
+        Panel1.Controls.Add(LogoutBtn)
+        Panel1.Controls.Add(btnPanel3)
+        Panel1.Controls.Add(btnPanel2)
+        Panel1.Controls.Add(BtnPanel1)
         Panel1.Controls.Add(DashboardBtn)
         Panel1.Controls.Add(ItemsBtn)
-        Panel1.Controls.Add(Button4)
-        Panel1.Controls.Add(Button3)
-        Panel1.Controls.Add(Button2)
+        Panel1.Controls.Add(SupplierBtn)
         Panel1.Location = New Point(0, 54)
         Panel1.Name = "Panel1"
         Panel1.Size = New Size(200, 405)
         Panel1.TabIndex = 0
+        ' 
+        ' btnPanel3
+        ' 
+        btnPanel3.BackColor = Color.DodgerBlue
+        btnPanel3.Location = New Point(0, 218)
+        btnPanel3.Name = "btnPanel3"
+        btnPanel3.Size = New Size(12, 44)
+        btnPanel3.TabIndex = 12
+        btnPanel3.Visible = False
+        ' 
+        ' btnPanel2
+        ' 
+        btnPanel2.BackColor = Color.DodgerBlue
+        btnPanel2.Location = New Point(0, 159)
+        btnPanel2.Name = "btnPanel2"
+        btnPanel2.Size = New Size(12, 44)
+        btnPanel2.TabIndex = 12
+        btnPanel2.Visible = False
+        ' 
+        ' BtnPanel1
+        ' 
+        BtnPanel1.BackColor = Color.DodgerBlue
+        BtnPanel1.Location = New Point(0, 100)
+        BtnPanel1.Name = "BtnPanel1"
+        BtnPanel1.Size = New Size(12, 44)
+        BtnPanel1.TabIndex = 11
+        BtnPanel1.Visible = False
         ' 
         ' DashboardBtn
         ' 
@@ -52,75 +86,67 @@ Partial Class Form1
         DashboardBtn.FlatAppearance.BorderSize = 0
         DashboardBtn.FlatStyle = FlatStyle.Flat
         DashboardBtn.ForeColor = SystemColors.ButtonHighlight
-        DashboardBtn.Image = My.Resources.Resources.apps
-        DashboardBtn.Location = New Point(3, 100)
+        DashboardBtn.Image = CType(resources.GetObject("DashboardBtn.Image"), Image)
+        DashboardBtn.ImageAlign = ContentAlignment.MiddleLeft
+        DashboardBtn.Location = New Point(0, 100)
         DashboardBtn.Name = "DashboardBtn"
-        DashboardBtn.Padding = New Padding(5, 0, 0, 0)
-        DashboardBtn.Size = New Size(194, 44)
+        DashboardBtn.Padding = New Padding(10, 0, 0, 0)
+        DashboardBtn.Size = New Size(200, 44)
         DashboardBtn.TabIndex = 2
-        DashboardBtn.Text = "Dashboard"
+        DashboardBtn.Text = "                 Dashboard"
+        DashboardBtn.TextAlign = ContentAlignment.MiddleLeft
         DashboardBtn.UseVisualStyleBackColor = True
         ' 
         ' ItemsBtn
         ' 
+        ItemsBtn.Cursor = Cursors.Hand
         ItemsBtn.FlatAppearance.BorderSize = 0
         ItemsBtn.FlatStyle = FlatStyle.Flat
         ItemsBtn.ForeColor = SystemColors.ButtonHighlight
-        ItemsBtn.Image = My.Resources.Resources.apps
-        ItemsBtn.Location = New Point(3, 150)
+        ItemsBtn.Image = CType(resources.GetObject("ItemsBtn.Image"), Image)
+        ItemsBtn.Location = New Point(3, 159)
         ItemsBtn.Name = "ItemsBtn"
         ItemsBtn.Size = New Size(194, 44)
         ItemsBtn.TabIndex = 4
         ItemsBtn.Text = "Items"
         ItemsBtn.UseVisualStyleBackColor = True
         ' 
-        ' Button4
+        ' SupplierBtn
         ' 
-        Button4.FlatAppearance.BorderSize = 0
-        Button4.FlatStyle = FlatStyle.Flat
-        Button4.ForeColor = SystemColors.ButtonHighlight
-        Button4.Image = My.Resources.Resources.apps
-        Button4.Location = New Point(3, 282)
-        Button4.Name = "Button4"
-        Button4.Size = New Size(194, 44)
-        Button4.TabIndex = 10
-        Button4.Text = "Suppliers"
-        Button4.UseVisualStyleBackColor = True
-        ' 
-        ' Button3
-        ' 
-        Button3.FlatAppearance.BorderSize = 0
-        Button3.FlatStyle = FlatStyle.Flat
-        Button3.ForeColor = SystemColors.ButtonHighlight
-        Button3.Image = My.Resources.Resources.apps
-        Button3.Location = New Point(3, 238)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(194, 44)
-        Button3.TabIndex = 8
-        Button3.Text = "Items Sold"
-        Button3.UseVisualStyleBackColor = True
-        ' 
-        ' Button2
-        ' 
-        Button2.FlatAppearance.BorderSize = 0
-        Button2.FlatStyle = FlatStyle.Flat
-        Button2.ForeColor = SystemColors.ButtonHighlight
-        Button2.Image = My.Resources.Resources.apps
-        Button2.Location = New Point(3, 194)
-        Button2.Name = "Button2"
-        Button2.Size = New Size(194, 44)
-        Button2.TabIndex = 6
-        Button2.Text = "Items In"
-        Button2.UseVisualStyleBackColor = True
+        SupplierBtn.Cursor = Cursors.Hand
+        SupplierBtn.FlatAppearance.BorderSize = 0
+        SupplierBtn.FlatStyle = FlatStyle.Flat
+        SupplierBtn.ForeColor = SystemColors.ButtonHighlight
+        SupplierBtn.Image = CType(resources.GetObject("SupplierBtn.Image"), Image)
+        SupplierBtn.Location = New Point(3, 218)
+        SupplierBtn.Name = "SupplierBtn"
+        SupplierBtn.Size = New Size(194, 44)
+        SupplierBtn.TabIndex = 10
+        SupplierBtn.Text = "Suppliers"
+        SupplierBtn.UseVisualStyleBackColor = True
         ' 
         ' Panel2
         ' 
         Panel2.BackColor = Color.DodgerBlue
+        Panel2.Controls.Add(ProfileBtn)
         Panel2.Dock = DockStyle.Top
         Panel2.Location = New Point(0, 0)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(867, 55)
         Panel2.TabIndex = 1
+        ' 
+        ' ProfileBtn
+        ' 
+        ProfileBtn.BackgroundImage = CType(resources.GetObject("ProfileBtn.BackgroundImage"), Image)
+        ProfileBtn.BackgroundImageLayout = ImageLayout.Stretch
+        ProfileBtn.Cursor = Cursors.Hand
+        ProfileBtn.FlatAppearance.BorderSize = 0
+        ProfileBtn.FlatStyle = FlatStyle.Flat
+        ProfileBtn.Location = New Point(800, 0)
+        ProfileBtn.Name = "ProfileBtn"
+        ProfileBtn.Size = New Size(55, 55)
+        ProfileBtn.TabIndex = 0
+        ProfileBtn.UseVisualStyleBackColor = True
         ' 
         ' Panel8
         ' 
@@ -128,6 +154,20 @@ Partial Class Form1
         Panel8.Name = "Panel8"
         Panel8.Size = New Size(667, 405)
         Panel8.TabIndex = 2
+        ' 
+        ' LogoutBtn
+        ' 
+        LogoutBtn.Cursor = Cursors.Hand
+        LogoutBtn.FlatAppearance.BorderSize = 0
+        LogoutBtn.FlatStyle = FlatStyle.Flat
+        LogoutBtn.ForeColor = SystemColors.ButtonHighlight
+        LogoutBtn.Image = CType(resources.GetObject("LogoutBtn.Image"), Image)
+        LogoutBtn.Location = New Point(3, 361)
+        LogoutBtn.Name = "LogoutBtn"
+        LogoutBtn.Size = New Size(194, 44)
+        LogoutBtn.TabIndex = 13
+        LogoutBtn.Text = "Logout"
+        LogoutBtn.UseVisualStyleBackColor = True
         ' 
         ' Form1
         ' 
@@ -141,6 +181,7 @@ Partial Class Form1
         Name = "Form1"
         Text = "Form1"
         Panel1.ResumeLayout(False)
+        Panel2.ResumeLayout(False)
         ResumeLayout(False)
     End Sub
 
@@ -148,9 +189,12 @@ Partial Class Form1
     Friend WithEvents DashboardBtn As Button
     Friend WithEvents Panel2 As Panel
     Friend WithEvents ItemsBtn As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents SupplierBtn As Button
     Friend WithEvents Panel8 As Panel
+    Friend WithEvents BtnPanel1 As FlowLayoutPanel
+    Friend WithEvents ProfileBtn As Button
+    Friend WithEvents btnPanel3 As FlowLayoutPanel
+    Friend WithEvents btnPanel2 As FlowLayoutPanel
+    Friend WithEvents LogoutBtn As Button
 
 End Class
